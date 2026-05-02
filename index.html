@@ -1881,7 +1881,7 @@ footer .crest-mark svg { width: 48px; height: 48px; }
 <!-- ═══════════ STICKY NAV ═══════════ -->
 <nav class="navbar">
   <div class="nav-inner">
-    <div class="nav-brand">
+    <a href="#top" class="nav-brand" onclick="event.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); history.replaceState(null, '', window.location.pathname);" style="text-decoration: none; cursor: pointer;">
       <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <!-- Maske: USA-form (samme silhuett som Masters-logoen) -->
         <defs>
@@ -1908,7 +1908,7 @@ footer .crest-mark svg { width: 48px; height: 48px; }
         <path d="M 76 20 L 88 22 L 76 25 Z" fill="#c8102e" stroke="#8b1a1a" stroke-width="0.4"/>
       </svg>
       <span style="font-family: var(--serif-display); font-style: italic; font-size: 16px; letter-spacing: 0.02em; color: var(--masters-gold-bright); text-transform: none; font-weight: 700;">Swedish Open</span>
-    </div>
+    </a>
     <div class="nav-links">
       <a href="#champion" style="color: var(--masters-gold-bright); opacity: 1;">★ Champion</a>
       <a href="#leaderboard">Leaderboard</a>
