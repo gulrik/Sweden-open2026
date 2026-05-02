@@ -2623,5 +2623,17 @@ footer .crest-mark svg { width: 48px; height: 48px; }
   </div>
 </footer>
 
+<script>
+  // Tving siden til å starte på toppen, og deaktiver browser scroll-restoration
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  window.addEventListener('load', function() {
+    // Hvis ingen hash i URL, scroll til topp
+    if (!window.location.hash) {
+      window.scrollTo(0, 0);
+    }
+  });
+</script>
 </body>
 </html>
